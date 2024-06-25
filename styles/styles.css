@@ -3,10 +3,9 @@
 }
 
 header{
-  display: flex;
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 
   flex-direction: column;
   justify-content: space-between;
@@ -40,9 +39,12 @@ nav a{
 
 .mobile-header{
   transform: translateX(-100%);
+  bottom: 0;
 }
+
 @media (max-width:800px){
   .desktop-header{
+    display: none;
     transform: translateX(-100%);
   }
   
